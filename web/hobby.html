@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+  body {
+    background-image: url(../image/z1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Arial, sans-serif; /* 设置字体 */
+    margin: 0; /* 移除默认的边距 */
+    padding-top: 50px; /* 增加顶部边距，为导航栏留出空间 */
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #FFC0CB; /* 粉色 */
+    padding: 10px 0;
+    position: fixed; /* 固定导航栏在顶部 */
+    width: 100%; /* 导航栏宽度为100% */
+    z-index: 1000; /* 确保导航栏在内容上方 */
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+  nav a:hover {
+    text-decoration: underline;
+    color: hsla(331,66%,92%,1);
+  }
+  .image-container {
+    display: flex;
+    flex-wrap: wrap; /* 允许内容换行 */
+    justify-content: center; /* 水平居中 */
+    gap: 10px; /* 图片之间的间距 */
+  }
+  .image-container div {
+    flex: 1 1 30%; /* 每个图片容器的宽度 */
+    max-width: 30%; /* 最大宽度 */
+  }
+  .image-container img {
+    width: 100%; /* 图片宽度 */
+    height: auto; /* 图片高度自适应 */
+  }
+  table {
+    width: 80%;
+    border: 1px solid black;
+    margin: 30px auto; /* 将表格居中 */
+  }
+</style>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="../index.html">首页</a></li>
+      <li><a href="food.html">美食</a></li>
+      <li><a href="pet.html">宠物</a></li>
+      <li><a href="tour.html">旅游</a></li>
+      <li><a href="hobby.html">爱好</a></li>
+    </ul>
+  </nav>
+  <!-- 表格前的空行 -->
+  <p style="margin-bottom: 30px;">&nbsp;</p>
+  <table>
+    <tbody>
+      <tr>
+        <td><img src="../image/微信图片_202411192112041.jpg" width="250" height="250" alt=""/></td>
+        <td><img src="../image/微信图片_202411192112051.jpg" width="250" height="250" alt=""/></td>
+        <td><img src="../image/微信图片_20241119211205.jpg" width="250" height="250" alt=""/></td>
+      </tr>
+      <tr>
+        <td><img src="../image/微信图片_20241119211204.jpg" width="250" height="250" alt=""/></td>
+        <td><img src="../image/微信图片_20241119211203.jpg" width="250" height="250" alt=""/></td>
+        <td><img src="../image/微信图片_20241119211147.jpg" width="250" height="250" alt=""/></td>
+      </tr>
+      
+    </tbody>
+  </table>
+</body>
+</html>
